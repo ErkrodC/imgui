@@ -13,6 +13,10 @@ add_library(imgui
 	imstb_rectpack.h
 	imstb_textedit.h
 	imstb_truetype.h
+
+	#ER TODO, this cmakelists should be dynamic in which backend(s) it compiles, rather than just defaulting to opengl3/glfw,
+	# then parent can control its compilation...but this works for now.
+
 	#	backends/imgui_impl_allegro5.cpp
 	#	backends/imgui_impl_allegro5.h
 	#	backends/imgui_impl_android.cpp
